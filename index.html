@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Devopera by YOTOV-LIMITED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Devopera</h1>
+      <h2 class="project-tagline">Repository for Dev.Opera source code</h2>
+      <a href="https://github.com/YOTOV-LIMITED/devopera" class="btn">View on GitHub</a>
+      <a href="https://github.com/YOTOV-LIMITED/devopera/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/YOTOV-LIMITED/devopera/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="devopera-" class="anchor" href="#devopera-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dev.Opera <a href="https://travis-ci.org/operasoftware/devopera"><img src="https://travis-ci.org/operasoftware/devopera.svg?branch=master" alt="Build status"></a>
+</h1>
+
+<p>We’ve rebuilt <a href="https://dev.opera.com/">Dev.Opera</a> as a static site, powered by Jekyll, Sass, and Gulp. In this repository, you find all the source files and content to build the site, <a href="CONTRIBUTING.md#code-improvements">make improvements</a>, and <a href="CONTRIBUTING.md#article-suggestions--contributions">submit new articles</a>.</p>
+
+<h2>
+<a id="environment-setup" class="anchor" href="#environment-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Environment setup</h2>
+
+<ol>
+<li>Install Bundler by running <code>gem install bundler</code> on the command line.</li>
+<li>Download and install <a href="http://nodejs.org/">Node.js</a> or <a href="https://iojs.org/">io.js</a> with the default installer options.</li>
+<li>Clone the project by running <code>git clone git@github.com:operasoftware/devopera.git</code> and <code>cd</code> into the <code>devopera</code> folder.</li>
+<li>Install Jekyll, Sass, and all needed gems by running <code>bundle install</code>.</li>
+<li>Run <code>npm install</code> inside the <code>devopera</code> folder.</li>
+<li>Run <code>npm install gulp -g</code> to install Gulp globally.</li>
+</ol>
+
+<p>Please install <a href="http://editorconfig.org/#download">EditorConfig</a> plugin for your editor to keep code style declared in the <a href=".editorconfig"><code>.editorconfig</code></a> file.</p>
+
+<h2>
+<a id="environment-update" class="anchor" href="#environment-update" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Environment update</h2>
+
+<p>If you’ve set up all the above at some point in the past, and want to update your installation, these are the steps to follow:</p>
+
+<ol>
+<li>Run <code>sudo gem update</code> to install the latest Ruby gems.</li>
+<li>Run <code>npm install</code> inside the <code>devopera</code> folder.</li>
+</ol>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development</h2>
+
+<p>To start developing Dev.Opera run <code>gulp</code>, it would take up to 1 minute to:</p>
+
+<ol>
+<li>Build site in a limited mode with only latest 150 posts.</li>
+<li>Start local server on <code>http://0.0.0.0:33310</code> address.</li>
+<li>Open it in your default browser.</li>
+<li>Launch a <code>watch</code> task for all files.</li>
+</ol>
+
+<p>So now every time you change project files, Dev.Opera will be rebuilt and you browser will update. For HTML and Markdown files it will still take up to 1 minute, for CSS it will be much faster (please request the same fast track for JS or anything else if needed).</p>
+
+<h1>
+<a id="full-build-and-deploy" class="anchor" href="#full-build-and-deploy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Full build and deploy</h1>
+
+<p>To <strong>build</strong> a complete Dev.Opera, run <code>gulp build</code>: it will take a while to build the full site with all posts included in the <code>_site</code> folder. To <strong>deploy</strong> (sync build with remote server), run <code>gulp deploy</code>.</p>
+
+<h2>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h2>
+
+<ul>
+<li>All instructions are for Unix (OS X, Linux, etc.) because Jekyll is not compatible with Windows.</li>
+<li>You may require write access for all commands mentioned above. Type <code>sudo</code>, space and command if needed.</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/YOTOV-LIMITED/devopera">Devopera</a> is maintained by <a href="https://github.com/YOTOV-LIMITED">YOTOV-LIMITED</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-73765225-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
